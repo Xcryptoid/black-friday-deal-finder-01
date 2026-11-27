@@ -6,13 +6,21 @@
 // when the price was checked (UTC) and where it was read. No price here is invented:
 // where two sources disagreed the deal was dropped, not averaged.
 //
+// v2 note (27 Nov 2026, 09:15 UTC): 18 of the 24 links below now point at the
+// exact product page, re-verified live. Six keep a store search link because
+// no verifiable exact page surfaced for them (airpods-pro-3, frame-55-tgt,
+// roomba-105, lego-fifa-trophy, switch2-bundle, michael-kors-crossbody) —
+// their prices were still confirmed live at the same stores. The Switch 2
+// bundle price was corrected in v2: $499.99, was $549.99 (v1 had the
+// standalone console's $449.99 launch price by mistake).
+//
 // verdict is the honest signal: "new-low" (the lowest price the sources have seen),
 // "strong" (a deep cut on a real list price) or "routine" (a real cut, but a modest
 // one, or a product that goes on sale often). group links the same product sold at
 // two stores, so the site can compare them head to head.
 
-export const CHECKED_AT = "2026-11-27T06:45:00Z";
-export const CHECKED_LABEL = "Fri 27 Nov 2026, 06:45 UTC";
+export const CHECKED_AT = "2026-11-27T09:15:00Z";
+export const CHECKED_LABEL = "Fri 27 Nov 2026, 09:15 UTC";
 
 export const deals = [
   {
@@ -35,7 +43,7 @@ export const deals = [
     category: "Audio",
     price: 169,
     was: 398,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=Sony+WH-1000XM5",
+    url: "https://www.bestbuy.com/product/sony-wh-1000xm5-wireless-noise-cancelling-over-the-ear-headphones-black/J7XSRH5CXG",
     checked: CHECKED_AT,
     source: "Best Buy Black Friday ad, via USA Today",
     verdict: "strong",
@@ -48,7 +56,7 @@ export const deals = [
     category: "Audio",
     price: 169.99,
     was: 359.99,
-    url: "https://www.target.com/s?searchTerm=Bose+QuietComfort+headphones",
+    url: "https://www.target.com/p/bose-quietcomfort-bluetooth-wireless-noise-cancelling-headphones-blue-dusk/-/A-92407081",
     checked: CHECKED_AT,
     source: "Target Black Friday ad",
     verdict: "strong",
@@ -61,7 +69,7 @@ export const deals = [
     category: "Audio",
     price: 79.99,
     was: 199.99,
-    url: "https://www.target.com/s?searchTerm=Beats+Solo+4",
+    url: "https://www.target.com/p/beats-solo-4-bluetooth-wireless-on-ear-headphones-warm-white/-/A-93124207",
     checked: CHECKED_AT,
     source: "Target Black Friday ad",
     verdict: "strong",
@@ -74,7 +82,7 @@ export const deals = [
     category: "Audio",
     price: 149.99,
     was: 349.99,
-    url: "https://www.target.com/s?searchTerm=Beats+Studio+Pro",
+    url: "https://www.target.com/p/beats-studio-pro-bluetooth-wireless-headphones-black/-/A-89401490",
     checked: CHECKED_AT,
     source: "Target Black Friday ad",
     verdict: "strong",
@@ -87,7 +95,7 @@ export const deals = [
     category: "TVs",
     price: 229.99,
     was: 469.99,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=TCL+65-inch+4K+TV",
+    url: "https://www.bestbuy.com/product/tcl-65-s4cf-series-4k-uhd-hdr-smart-tv-with-fire-tv-2026/J36QYTHZVP",
     checked: CHECKED_AT,
     source: "Best Buy Black Friday ad, via USA Today",
     verdict: "strong",
@@ -100,7 +108,7 @@ export const deals = [
     category: "TVs",
     price: 899.99,
     was: 1199.99,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=Samsung+The+Frame+55-inch",
+    url: "https://www.bestbuy.com/product/samsung-55-class-ls03h-series-the-frame-4k-uhd-samsungvision-ai-smart-tizen-tv-2026/JJGRF3HJXL",
     checked: CHECKED_AT,
     source: "SammyGuru + MacRumors, prices checked 25 Nov 2026",
     verdict: "routine",
@@ -128,7 +136,7 @@ export const deals = [
     category: "TVs",
     price: 19.99,
     was: 49.99,
-    url: "https://www.target.com/s?searchTerm=Fire+TV+Stick+4K",
+    url: "https://www.target.com/p/amazon-fire-tv-stick-4k-simple-4k-streaming-new-fire-tv-remote-all-your-apps-in-one-place-free-38-live-tv-find-shows-faster-with-alexa/-/A-1012349327",
     checked: CHECKED_AT,
     source: "Target Black Friday ad",
     verdict: "strong",
@@ -141,7 +149,7 @@ export const deals = [
     category: "Laptops",
     price: 1049,
     was: 1299,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=MacBook+Air+13-inch",
+    url: "https://www.bestbuy.com/product/apple-macbook-air-13-inch-laptop-m5-chip-with-10-core-cpu-and-8-core-gpu-16gb-memory-512gb-ssd-silver/JJGCQLWVZP",
     checked: CHECKED_AT,
     source: "Best Buy Black Friday ad, via USA Today",
     verdict: "routine",
@@ -154,7 +162,7 @@ export const deals = [
     category: "Laptops",
     price: 449.99,
     was: 799.99,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=HP+OmniBook+5+OLED",
+    url: "https://www.bestbuy.com/product/hp-omnibook-5-14-2k-oled-touchscreen-laptop-intel-core-5-series-3-2026-8gb-memory-256gb-ssd-starlit-blue/J3KSW748W6",
     checked: CHECKED_AT,
     source: "Best Buy Black Friday ad, via USA Today",
     verdict: "strong",
@@ -167,7 +175,7 @@ export const deals = [
     category: "Phones",
     price: 499.99,
     was: 699.99,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=Samsung+Galaxy+S26+FE",
+    url: "https://www.bestbuy.com/product/samsung-galaxy-s26-fe-128gb-unlocked-graphite/JJGRF3V6G5",
     checked: CHECKED_AT,
     source: "Best Buy Black Friday ad, via USA Today",
     verdict: "strong",
@@ -180,7 +188,7 @@ export const deals = [
     category: "Home",
     price: 270,
     was: 600,
-    url: "https://www.walmart.com/search?q=Dyson+V9+Motorbar",
+    url: "https://www.walmart.com/ip/Dyson-V9-Motorbar-Cordless-Vacuum-Nickel-New/18144124255",
     checked: CHECKED_AT,
     source: "Yahoo Shopping Black Friday roundup",
     verdict: "strong",
@@ -194,7 +202,7 @@ export const deals = [
     category: "Home",
     price: 269.99,
     was: 599.99,
-    url: "https://www.target.com/s?searchTerm=Dyson+V9+Motorbar",
+    url: "https://www.target.com/p/dyson-v9-motorbar-cordless-vacuum-9-8-34-cleaning-path-nickel/-/A-1011912746",
     checked: CHECKED_AT,
     source: "Target Black Friday ad, prices checked 25 Nov 2026",
     verdict: "strong",
@@ -208,7 +216,7 @@ export const deals = [
     category: "Home",
     price: 199.99,
     was: 499.99,
-    url: "https://www.bestbuy.com/site/searchpage.jsp?st=Shark+PowerDetect+Speed",
+    url: "https://www.bestbuy.com/product/shark-powerdetect-speed-cordless-stick-vacuum-cleaner-hepa-filtration-60-min-runtime-ia1121-ivory/JXJVXL847Y",
     checked: CHECKED_AT,
     source: "Best Buy Black Friday ad, via USA Today",
     verdict: "strong",
@@ -234,7 +242,7 @@ export const deals = [
     category: "Kitchen",
     price: 32,
     was: 80,
-    url: "https://www.walmart.com/search?q=Crock-Pot+7+quart+slow+cooker",
+    url: "https://www.walmart.com/ip/Crock-Pot-Manual-7-Quart-Slow-Cooker-Reflection/15200300942",
     checked: CHECKED_AT,
     source: "Yahoo Shopping Black Friday roundup",
     verdict: "new-low",
@@ -247,7 +255,7 @@ export const deals = [
     category: "Kitchen",
     price: 169,
     was: 319,
-    url: "https://www.walmart.com/search?q=Ninja+SLUSHi+frozen+drink+maker",
+    url: "https://www.walmart.com/ip/Ninja-SLUSHi-96-Oz-Frozen-Drink-Machine-with-RapidChill-Technology-5-Presets-Dishwasher-Safe-Slushy-Maker-FS310GN-Green/18893414176",
     checked: CHECKED_AT,
     source: "MamaCheaps Walmart Black Friday 2026",
     verdict: "strong",
@@ -260,7 +268,7 @@ export const deals = [
     category: "Kitchen",
     price: 99.99,
     was: 219.99,
-    url: "https://www.walmart.com/search?q=CAROTE+32+piece+cookware+set",
+    url: "https://www.walmart.com/ip/Carote-32-Piece-Nonstick-Pots-and-Pans-Granite-Cookware-Set-with-Bakeware-Knives-Brown/17385553320",
     checked: CHECKED_AT,
     source: "MamaCheaps Walmart Black Friday 2026",
     verdict: "strong",
@@ -273,7 +281,7 @@ export const deals = [
     category: "Toys",
     price: 15,
     was: 29.99,
-    url: "https://www.walmart.com/search?q=LEGO+Creator+Red+Panda+31394",
+    url: "https://www.walmart.com/ip/LEGO-Creator-3-1-Cute-Animals-Red-Panda-Building-Toy-Girls-Boys-Ages-8-3-Building-Options-Bookshelf-Bedroom-Decor-Gift-Idea-Kids-31394/18640609617",
     checked: CHECKED_AT,
     source: "MamaCheaps Walmart Black Friday 2026",
     verdict: "strong",
@@ -299,7 +307,7 @@ export const deals = [
     category: "Toys",
     price: 25,
     was: 50,
-    url: "https://www.walmart.com/search?q=LEGO+Technic+Koenigsegg+Jesko",
+    url: "https://www.walmart.com/ip/LEGO-Technic-Koenigsegg-Jesko-Absolut-Grey-Hypercar-Sports-Car-Building-Toy-Set-Boys-Girls-Vehicle-Racing-Car-Kids-Buildable-Model-Kit-Sports-Car-Toy/5305163212",
     checked: CHECKED_AT,
     source: "DealNews Walmart Black Friday deals",
     verdict: "strong",
@@ -310,8 +318,8 @@ export const deals = [
     title: "Nintendo Switch 2 + Mario Kart World bundle",
     store: "Target",
     category: "Gaming",
-    price: 449.99,
-    was: 499.99,
+    price: 499.99,
+    was: 549.99,
     url: "https://www.target.com/s?searchTerm=Nintendo+Switch+2+Mario+Kart+World+bundle",
     checked: CHECKED_AT,
     source: "Target Black Friday ad",
