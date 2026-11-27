@@ -1,0 +1,180 @@
+/* DealSleuth — Black Friday 2026. Dark board, amber accents, one column on a phone. */
+:root {
+  --bg: #141210;
+  --panel: #1f1c19;
+  --panel2: #26221e;
+  --ink: #f5efe6;
+  --muted: #b8ab9a;
+  --line: #3a332c;
+  --amber: #f5b942;
+  --amber-ink: #1a1408;
+  --green: #7dd87d;
+  --red: #ff8a7a;
+  --blue: #8ec9ff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--amber); }
+a:visited { color: #e0a52e; }
+header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 3px solid var(--amber);
+  background: #100e0c;
+}
+header a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--amber);
+}
+header span { color: var(--muted); font-size: 0.9rem; }
+main { max-width: 1080px; margin: 0 auto; padding: 1rem 1.25rem 2rem; }
+footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+h1 { font-size: 1.6rem; line-height: 1.2; margin: 0.2rem 0 0.4rem; }
+h2 { font-size: 1.15rem; margin: 1.1rem 0 0.5rem; }
+.hero .tagline { font-size: 1.05rem; margin: 0.1rem 0; }
+.hero .stats { font-size: 1rem; margin: 0.3rem 0; }
+.hero .stats strong { color: var(--amber); }
+.checked-note, .card-checked { color: var(--muted); font-size: 0.85rem; }
+.checked-note { margin: 0.2rem 0 0; }
+.top-picks { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 0.3rem 1rem 0.7rem; margin-top: 0.9rem; }
+.top-picks h2 { margin-top: 0.5rem; }
+.top-picks ol { margin: 0.3rem 0 0; padding-left: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem 1rem; }
+.top-picks li { margin: 0; font-size: 0.92rem; }
+.top-picks .rank { color: var(--amber); font-weight: 800; }
+.board { display: grid; grid-template-columns: 250px 1fr; gap: 1.1rem; align-items: start; margin-top: 1rem; }
+.sidebar { position: sticky; top: 0.8rem; }
+.controls { margin-top: 0; }
+.controls input[type="search"] {
+  width: min(100%, 26rem);
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.controls select {
+  padding: 0.45rem 0.6rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.controls fieldset { border: 0; margin: 0.6rem 0 0; padding: 0; }
+.controls legend { font-size: 0.85rem; color: var(--muted); padding: 0; margin-bottom: 0.3rem; }
+.controls button {
+  font: inherit;
+  font-size: 0.9rem;
+  margin: 0 0.35rem 0.35rem 0;
+  padding: 0.35rem 0.7rem;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.controls button.on { background: var(--amber); color: var(--amber-ink); border-color: var(--amber); font-weight: 700; }
+.count { color: var(--muted); }
+.deals { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.9rem; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--muted);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+}
+.card.verdict-new-low { border-left-color: var(--green); }
+.card.verdict-strong { border-left-color: var(--amber); }
+.card.verdict-routine { border-left-color: var(--blue); }
+.card-title { font-size: 1.05rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+.card-title:hover { text-decoration: underline; }
+.card-meta { margin: 0.25rem 0; color: var(--muted); font-size: 0.9rem; }
+.card-meta .store { color: var(--amber); font-weight: 700; }
+.card-price { margin: 0.35rem 0 0; font-size: 1.05rem; }
+.card-price strong { font-size: 1.35rem; color: var(--amber); }
+.card-price s { color: var(--muted); }
+.card-price.big strong { font-size: 1.9rem; }
+.off {
+  display: inline-block;
+  background: var(--amber);
+  color: var(--amber-ink);
+  font-weight: 800;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 0.1rem 0.45rem;
+  margin-left: 0.3rem;
+}
+.card-save { margin: 0.1rem 0; color: var(--green); font-weight: 600; }
+.card-verdict { margin: 0.5rem 0 0.2rem; font-size: 0.92rem; }
+.pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  padding: 0.15rem 0.45rem;
+  margin-right: 0.3rem;
+  background: var(--muted);
+  color: #141210;
+}
+.verdict-new-low .pill { background: var(--green); }
+.verdict-strong .pill { background: var(--amber); }
+.verdict-routine .pill { background: var(--blue); }
+.card-checked { margin: 0.4rem 0; }
+.card-links { margin: 0.5rem 0 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+.card-links a { font-weight: 600; }
+.empty { grid-column: 1 / -1; color: var(--muted); }
+.detail { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--muted); border-radius: 10px; padding: 1rem 1.2rem; }
+.detail.verdict-new-low { border-left-color: var(--green); }
+.detail.verdict-strong { border-left-color: var(--amber); }
+.detail.verdict-routine { border-left-color: var(--blue); }
+.detail dl { display: grid; grid-template-columns: 7rem 1fr; gap: 0.3rem 0.8rem; margin: 1rem 0; }
+.detail dt { color: var(--muted); }
+.detail dd { margin: 0; }
+.buy {
+  display: inline-block;
+  background: var(--amber);
+  color: var(--amber-ink);
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.1rem;
+}
+.compare { margin-top: 1.2rem; border-top: 1px solid var(--line); padding-top: 0.4rem; }
+.compare ul { list-style: none; padding: 0; }
+.compare li { margin: 0.4rem 0; }
+.cheaper { color: var(--green); font-weight: 700; }
+.dearer, .same { color: var(--muted); }
+.method { margin-top: 1.6rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+.method h2 { color: var(--ink); }
+@media (max-width: 860px) {
+  .board { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .top-picks ol { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  body { font-size: 15px; }
+  h1 { font-size: 1.5rem; }
+  main { padding: 0.8rem 0.9rem 1.5rem; }
+  .deals { grid-template-columns: 1fr; }
+  .detail dl { grid-template-columns: 5.5rem 1fr; }
+}
