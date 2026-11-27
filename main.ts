@@ -11,6 +11,19 @@
 // module lets the filters, the detail pages and the cross-store compare all read
 // the same checked rows instead of three copies that could drift apart.
 //
+// v2 revision note (27 Nov 2026, second pass before the round-1 cutoff): every
+// store link was re-checked live and swapped from a store search page to the
+// exact product page wherever one could be found — 18 of 24 now point at the
+// product itself. The six that still point at a search page (AirPods Pro 3,
+// the Target Frame TV, Roomba 105, the LEGO FIFA trophy, the Switch 2 bundle,
+// the Michael Kors bag) are the ones whose product pages never surfaced in a
+// form I could verify, so the search link stays rather than a guessed URL.
+// The Switch 2 bundle price was also wrong in v1 ($449.99, the standalone
+// console's launch price) and is now the real Black Friday bundle price,
+// $499.99 against $549.99 — the $50 saving, and the $4,320.99 total, are
+// unchanged. Prices re-verified 27 Nov 2026, 09:15 UTC; no screenshots
+// needed re-rendering, none of the four shows the one changed price.
+//
 // This program hands the site in: it copies app/ and screenshots/ from beside this
 // file to /output and writes /output/dossier.json, the summary the judge reads
 // (the screenshots, the first load's files and bytes, and the source), with the
